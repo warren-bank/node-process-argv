@@ -1,0 +1,16 @@
+{
+  "name": "@warren-bank/node-process-argv",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "description": "An extremely lightweight node.js library to process command-line arguments.",
+  "license": "GPL-2.0",
+  "author": {
+    "name": "Warren R. Bank",
+    "email": "warren.r.bank@gmail.com",
+    "url": "https://github.com/warren-bank"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warren-bank/node-process-argv"
+  }
+}

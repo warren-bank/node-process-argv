@@ -1,0 +1,2 @@
+Option "--file-path-dirname-exists" requires a file path that terminates within a directory that already exists.
+You entered: "C:\does-not-exist\file.txt"

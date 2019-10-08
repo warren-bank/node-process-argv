@@ -1,0 +1,1 @@
+Option "--int" requires an integer value. You entered: "123.45"

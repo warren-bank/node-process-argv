@@ -1,0 +1,11 @@
+Option "--enum" requires a value restricted to the following options:
+[
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri",
+  "Sat",
+  "Sun"
+]
+You entered: "Friday I'm in Love"

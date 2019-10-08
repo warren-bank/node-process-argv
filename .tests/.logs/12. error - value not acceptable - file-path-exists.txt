@@ -1,0 +1,2 @@
+Option "--file-path-exists" requires a file path that already exists.
+You entered: "C:\does-not-exist\file.txt"

@@ -1,0 +1,2 @@
+Option "--file-json" requires the path to a file that contains valid JSON data.
+You entered: "C:\Windows\win.ini"
