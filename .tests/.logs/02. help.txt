@@ -19,74 +19,74 @@ options:
 "--bool"
   * Pass value of type: boolean
 
-"-s"
-"--string"
+"-s" <string>
+"--string" <string>
   * Pass value of type: string
 
-"-n"
-"--num"
+"-n" <number>
+"--num" <number>
   * Pass value of type: number
 
-"-i"
-"--int"
+"-i" <integer>
+"--int" <integer>
   * Pass value of type: integer
 
-"-e"
-"--enum"
+"-e" <element in enumeration>
+"--enum" <element in enumeration>
   * Pass value of type: string
     Value is constrained by a pre-defined list of acceptable options.
 
-"-fp"
-"--file-path"
+"-fp" </path/to/directory-or-file>
+"--file-path" </path/to/directory-or-file>
   * Pass value of type: string
     Value is resolved to a file path.
     File path need not exist.
 
-"-fpde"
-"--file-path-dirname-exists"
+"-fpde" </path/to/directory-must-exist/file.txt>
+"--file-path-dirname-exists" </path/to/directory-must-exist/file.txt>
   * Pass value of type: string
     Value is resolved to a file path.
     File path need not exist.
     Parent directory must exist.
 
-"-fpe"
-"--file-path-exists"
+"-fpe" </path/to/directory/file-must-exist.txt>
+"--file-path-exists" </path/to/directory/file-must-exist.txt>
   * Pass value of type: string
     Value is resolved to a file path.
     File path must exist.
 
-"-f"
-"--file"
-  * Pass value of type: string
-    Value is resolved to a file path.
-    File path must exist.
-    File content is read as string.
-
-"-ft"
-"--file-text"
+"-f" </path/to/directory/file-must-exist.txt>
+"--file" </path/to/directory/file-must-exist.txt>
   * Pass value of type: string
     Value is resolved to a file path.
     File path must exist.
     File content is read as string.
 
-"-fl"
-"--file-lines"
+"-ft" </path/to/directory/file-must-exist.txt>
+"--file-text" </path/to/directory/file-must-exist.txt>
+  * Pass value of type: string
+    Value is resolved to a file path.
+    File path must exist.
+    File content is read as string.
+
+"-fl" </path/to/directory/file-must-exist.txt>
+"--file-lines" </path/to/directory/file-must-exist.txt>
   * Pass value of type: array of strings
     Value is resolved to a file path.
     File path must exist.
     File content is read as string.
     File content is parsed to array of all non-empty lines.
 
-"-fj"
-"--file-json"
+"-fj" </path/to/directory/file-must-exist.json>
+"--file-json" </path/to/directory/file-must-exist.json>
   * Pass value of type: javascript object
     Value is resolved to a file path.
     File path must exist.
     File content is read as string.
     File content is parsed as JSON.
 
-"-fm"
-"--file-module"
+"-fm" </path/to/directory/file-must-exist.js>
+"--file-module" </path/to/directory/file-must-exist.js>
   * Pass value of type: javascript object
     Value is resolved to a file path.
     File path must exist.
@@ -98,41 +98,41 @@ options:
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-ms"
-"--string-many"
+"-ms" <string>
+"--string-many" <string>
   * Pass value of type: string
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-mn"
-"--num-many"
+"-mn" <number>
+"--num-many" <number>
   * Pass value of type: number
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-mi"
-"--int-many"
+"-mi" <integer>
+"--int-many" <integer>
   * Pass value of type: integer
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-me"
-"--enum-many"
+"-me" <element in enumeration>
+"--enum-many" <element in enumeration>
   * Pass value of type: string
     Value is constrained by a pre-defined list of acceptable options.
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-mfp"
-"--file-path-many"
+"-mfp" </path/to/directory-or-file>
+"--file-path-many" </path/to/directory-or-file>
   * Pass value of type: string
     Value is resolved to a file path.
     File path need not exist.
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-mfpde"
-"--file-path-dirname-exists-many"
+"-mfpde" </path/to/directory-must-exist/file.txt>
+"--file-path-dirname-exists-many" </path/to/directory-must-exist/file.txt>
   * Pass value of type: string
     Value is resolved to a file path.
     File path need not exist.
@@ -140,25 +140,16 @@ options:
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-mfpe"
-"--file-path-exists-many"
+"-mfpe" </path/to/directory/file-must-exist.txt>
+"--file-path-exists-many" </path/to/directory/file-must-exist.txt>
   * Pass value of type: string
     Value is resolved to a file path.
     File path must exist.
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-mf"
-"--file-many"
-  * Pass value of type: string
-    Value is resolved to a file path.
-    File path must exist.
-    File content is read as string.
-  * Flag can be invoked more than once to pass multiple values.
-    Result is an ordered array of all values.
-
-"-mft"
-"--file-text-many"
+"-mf" </path/to/directory/file-must-exist.txt>
+"--file-many" </path/to/directory/file-must-exist.txt>
   * Pass value of type: string
     Value is resolved to a file path.
     File path must exist.
@@ -166,8 +157,17 @@ options:
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-mfl"
-"--file-lines-many"
+"-mft" </path/to/directory/file-must-exist.txt>
+"--file-text-many" </path/to/directory/file-must-exist.txt>
+  * Pass value of type: string
+    Value is resolved to a file path.
+    File path must exist.
+    File content is read as string.
+  * Flag can be invoked more than once to pass multiple values.
+    Result is an ordered array of all values.
+
+"-mfl" </path/to/directory/file-must-exist.txt>
+"--file-lines-many" </path/to/directory/file-must-exist.txt>
   * Pass value of type: array of strings
     Value is resolved to a file path.
     File path must exist.
@@ -176,8 +176,8 @@ options:
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-mfj"
-"--file-json-many"
+"-mfj" </path/to/directory/file-must-exist.json>
+"--file-json-many" </path/to/directory/file-must-exist.json>
   * Pass value of type: javascript object
     Value is resolved to a file path.
     File path must exist.
@@ -186,8 +186,8 @@ options:
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-mfm"
-"--file-module-many"
+"-mfm" </path/to/directory/file-must-exist.js>
+"--file-module-many" </path/to/directory/file-must-exist.js>
   * Pass value of type: javascript object
     Value is resolved to a file path.
     File path must exist.
