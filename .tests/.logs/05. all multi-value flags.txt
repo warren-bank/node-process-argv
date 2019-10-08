@@ -19,6 +19,14 @@
     "Fri",
     "Sat"
   ],
+  "--regex-many": [
+    "/^.*$/",
+    "/^[\\w\\s]*$/"
+  ],
+  "--regex-case-insensitive-many": [
+    "/^[a-z]+$/i",
+    "/^[A-Z]+$/i"
+  ],
   "--file-path-many": [
     "C:\\Windows\\System32\\does-not-exist.exe",
     "C:\\Windows\\System32\\does-not-exist.exe"
@@ -32,12 +40,12 @@
     "C:\\Windows\\System32\\cmd.exe"
   ],
   "--file-many": [
-    "1.0.0\n",
-    "1.0.0\n"
+    "1.1.0\n",
+    "1.1.0\n"
   ],
   "--file-text-many": [
-    "1.0.0\n",
-    "1.0.0\n"
+    "1.1.0\n",
+    "1.1.0\n"
   ],
   "--file-lines-many": [
     [
@@ -68,6 +76,12 @@
       "\"--enum\" <element in enumeration>",
       "  * Pass value of type: string",
       "    Value is constrained by a pre-defined list of acceptable options.",
+      "\"-r\" <regex>",
+      "\"--regex\" <regex>",
+      "  * Pass value of type: RegExp (case sensitive)",
+      "\"-ri\" <regex>",
+      "\"--regex-case-insensitive\" <regex>",
+      "  * Pass value of type: RegExp (case insensitive)",
       "\"-fp\" </path/to/directory-or-file>",
       "\"--file-path\" </path/to/directory-or-file>",
       "  * Pass value of type: string",
@@ -140,6 +154,16 @@
       "\"--enum-many\" <element in enumeration>",
       "  * Pass value of type: string",
       "    Value is constrained by a pre-defined list of acceptable options.",
+      "  * Flag can be invoked more than once to pass multiple values.",
+      "    Result is an ordered array of all values.",
+      "\"-mr\" <regex>",
+      "\"--regex-many\" <regex>",
+      "  * Pass value of type: RegExp (case sensitive)",
+      "  * Flag can be invoked more than once to pass multiple values.",
+      "    Result is an ordered array of all values.",
+      "\"-mri\" <regex>",
+      "\"--regex-case-insensitive-many\" <regex>",
+      "  * Pass value of type: RegExp (case insensitive)",
       "  * Flag can be invoked more than once to pass multiple values.",
       "    Result is an ordered array of all values.",
       "\"-mfp\" </path/to/directory-or-file>",
@@ -235,6 +259,12 @@
       "\"--enum\" <element in enumeration>",
       "  * Pass value of type: string",
       "    Value is constrained by a pre-defined list of acceptable options.",
+      "\"-r\" <regex>",
+      "\"--regex\" <regex>",
+      "  * Pass value of type: RegExp (case sensitive)",
+      "\"-ri\" <regex>",
+      "\"--regex-case-insensitive\" <regex>",
+      "  * Pass value of type: RegExp (case insensitive)",
       "\"-fp\" </path/to/directory-or-file>",
       "\"--file-path\" </path/to/directory-or-file>",
       "  * Pass value of type: string",
@@ -309,6 +339,16 @@
       "    Value is constrained by a pre-defined list of acceptable options.",
       "  * Flag can be invoked more than once to pass multiple values.",
       "    Result is an ordered array of all values.",
+      "\"-mr\" <regex>",
+      "\"--regex-many\" <regex>",
+      "  * Pass value of type: RegExp (case sensitive)",
+      "  * Flag can be invoked more than once to pass multiple values.",
+      "    Result is an ordered array of all values.",
+      "\"-mri\" <regex>",
+      "\"--regex-case-insensitive-many\" <regex>",
+      "  * Pass value of type: RegExp (case insensitive)",
+      "  * Flag can be invoked more than once to pass multiple values.",
+      "    Result is an ordered array of all values.",
       "\"-mfp\" </path/to/directory-or-file>",
       "\"--file-path-many\" </path/to/directory-or-file>",
       "  * Pass value of type: string",
@@ -378,7 +418,7 @@
   "--file-json-many": [
     {
       "name": "@warren-bank/node-process-argv",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "main": "lib/index.js",
       "description": "An extremely lightweight node.js library to process command-line arguments.",
       "license": "GPL-2.0",
@@ -394,7 +434,7 @@
     },
     {
       "name": "@warren-bank/node-process-argv",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "main": "lib/index.js",
       "description": "An extremely lightweight node.js library to process command-line arguments.",
       "license": "GPL-2.0",
@@ -412,7 +452,7 @@
   "--file-module-many": [
     {
       "name": "@warren-bank/node-process-argv",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "main": "lib/index.js",
       "description": "An extremely lightweight node.js library to process command-line arguments.",
       "license": "GPL-2.0",
@@ -428,7 +468,7 @@
     },
     {
       "name": "@warren-bank/node-process-argv",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "main": "lib/index.js",
       "description": "An extremely lightweight node.js library to process command-line arguments.",
       "license": "GPL-2.0",

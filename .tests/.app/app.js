@@ -1,3 +1,5 @@
+require('./lib/hack')
+
 try {
   const argv_vals = require('./lib/process_argv')
 

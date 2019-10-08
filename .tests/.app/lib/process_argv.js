@@ -1,21 +1,23 @@
 const process_argv = require('../../../lib')
 
 const argv_flags = {
-  "--help":                             {bool: true},
-  "--version":                          {bool: true},
-  "--bool":                             {bool: true},
+  "--help":                             {bool:  true},
+  "--version":                          {bool:  true},
+  "--bool":                             {bool:  true},
   "--string":                           {},
-  "--num":                              {num:  true},
-  "--int":                              {num:  "int"},
-  "--enum":                             {enum: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},
-  "--file-path":                        {file: "path"},                                          // resolved path, may or may not already exist
-  "--file-path-dirname-exists":         {file: "path-dirname-exists"},                           // resolved path, may or may not already exist, parent directory must exist
-  "--file-path-exists":                 {file: "path-exists"},                                   // resolved path, must exist
-  "--file":                             {file: true},                                            // read contents as String
-  "--file-text":                        {file: "text"},                                          // read contents as String
-  "--file-lines":                       {file: "lines"},                                         // read contents as String, parse to Array of all non-empty lines
-  "--file-json":                        {file: "json"},                                          // read contents as String, parse as JSON
-  "--file-module":                      {file: "module"},                                        // import as CommonJS module
+  "--num":                              {num:   true},
+  "--int":                              {num:   "int"},
+  "--enum":                             {enum:  ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]},
+  "--regex":                            {regex: true},
+  "--regex-case-insensitive":           {regex: "i"},
+  "--file-path":                        {file:  "path"},                                          // resolved path, may or may not already exist
+  "--file-path-dirname-exists":         {file:  "path-dirname-exists"},                           // resolved path, may or may not already exist, parent directory must exist
+  "--file-path-exists":                 {file:  "path-exists"},                                   // resolved path, must exist
+  "--file":                             {file:  true},                                            // read contents as String
+  "--file-text":                        {file:  "text"},                                          // read contents as String
+  "--file-lines":                       {file:  "lines"},                                         // read contents as String, parse to Array of all non-empty lines
+  "--file-json":                        {file:  "json"},                                          // read contents as String, parse as JSON
+  "--file-module":                      {file:  "module"},                                        // import as CommonJS module
 }
 
 for (let key in argv_flags) {
@@ -36,6 +38,8 @@ const argv_flag_aliases = {
   "--num":                              ["-n"],
   "--int":                              ["-i"],
   "--enum":                             ["-e"],
+  "--regex":                            ["-r"],
+  "--regex-case-insensitive":           ["-ri"],
   "--file-path":                        ["-fp"],
   "--file-path-dirname-exists":         ["-fpde"],
   "--file-path-exists":                 ["-fpe"],
@@ -50,6 +54,8 @@ const argv_flag_aliases = {
   "--num-many":                         ["-mn"],
   "--int-many":                         ["-mi"],
   "--enum-many":                        ["-me"],
+  "--regex-many":                       ["-mr"],
+  "--regex-case-insensitive-many":      ["-mri"],
   "--file-path-many":                   ["-mfp"],
   "--file-path-dirname-exists-many":    ["-mfpde"],
   "--file-path-exists-many":            ["-mfpe"],

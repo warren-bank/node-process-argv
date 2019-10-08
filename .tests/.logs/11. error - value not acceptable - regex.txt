@@ -1,0 +1,5 @@
+Option "--regex" requires a well-formed regular expression pattern.
+You entered: "^+"
+
+Error message from regex parser:
+Invalid regular expression: /^+/: Nothing to repeat

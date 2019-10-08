@@ -36,6 +36,14 @@ options:
   * Pass value of type: string
     Value is constrained by a pre-defined list of acceptable options.
 
+"-r" <regex>
+"--regex" <regex>
+  * Pass value of type: RegExp (case sensitive)
+
+"-ri" <regex>
+"--regex-case-insensitive" <regex>
+  * Pass value of type: RegExp (case insensitive)
+
 "-fp" </path/to/directory-or-file>
 "--file-path" </path/to/directory-or-file>
   * Pass value of type: string
@@ -120,6 +128,18 @@ options:
 "--enum-many" <element in enumeration>
   * Pass value of type: string
     Value is constrained by a pre-defined list of acceptable options.
+  * Flag can be invoked more than once to pass multiple values.
+    Result is an ordered array of all values.
+
+"-mr" <regex>
+"--regex-many" <regex>
+  * Pass value of type: RegExp (case sensitive)
+  * Flag can be invoked more than once to pass multiple values.
+    Result is an ordered array of all values.
+
+"-mri" <regex>
+"--regex-case-insensitive-many" <regex>
+  * Pass value of type: RegExp (case insensitive)
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
