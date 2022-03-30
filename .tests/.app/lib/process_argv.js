@@ -13,8 +13,10 @@ const argv_flags = {
   "--file-path":                        {file:  "path"},                                          // resolved path, may or may not already exist
   "--file-path-dirname-exists":         {file:  "path-dirname-exists"},                           // resolved path, may or may not already exist, parent directory must exist
   "--file-path-exists":                 {file:  "path-exists"},                                   // resolved path, must exist
+  "--file-stream":                      {file:  "stream"},                                        // stream.Readable
+  "--file-buffer":                      {file:  "buffer"},                                        // read contents as Buffer
+  "--file-text":                        {file:  "text"},                                          // read contents as String (with utf8 encoding)
   "--file":                             {file:  true},                                            // read contents as String
-  "--file-text":                        {file:  "text"},                                          // read contents as String
   "--file-lines":                       {file:  "lines"},                                         // read contents as String, parse to Array of all non-empty lines
   "--file-json":                        {file:  "json"},                                          // read contents as String, parse as JSON
   "--file-module":                      {file:  "module"},                                        // import as CommonJS module
@@ -43,8 +45,10 @@ const argv_flag_aliases = {
   "--file-path":                        ["-fp"],
   "--file-path-dirname-exists":         ["-fpde"],
   "--file-path-exists":                 ["-fpe"],
-  "--file":                             ["-f"],
+  "--file-stream":                      ["-fs"],
+  "--file-buffer":                      ["-fb"],
   "--file-text":                        ["-ft"],
+  "--file":                             ["-f"],
   "--file-lines":                       ["-fl"],
   "--file-json":                        ["-fj"],
   "--file-module":                      ["-fm"],
@@ -59,8 +63,10 @@ const argv_flag_aliases = {
   "--file-path-many":                   ["-mfp"],
   "--file-path-dirname-exists-many":    ["-mfpde"],
   "--file-path-exists-many":            ["-mfpe"],
-  "--file-many":                        ["-mf"],
+  "--file-stream-many":                 ["-mfs"],
+  "--file-buffer-many":                 ["-mfb"],
   "--file-text-many":                   ["-mft"],
+  "--file-many":                        ["-mf"],
   "--file-lines-many":                  ["-mfl"],
   "--file-json-many":                   ["-mfj"],
   "--file-module-many":                 ["-mfm"],
