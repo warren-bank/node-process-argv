@@ -63,15 +63,29 @@ options:
     Value is resolved to a file path.
     File path must exist.
 
-"-f" </path/to/directory/file-must-exist.txt>
-"--file" </path/to/directory/file-must-exist.txt>
+"-fs" </path/to/directory/file-must-exist.txt>
+"--file-stream" </path/to/directory/file-must-exist.txt>
+  * Pass value of type: string
+    Value is resolved to a file path.
+    File path must exist.
+    File content is readable as stream.
+
+"-fb" </path/to/directory/file-must-exist.txt>
+"--file-buffer" </path/to/directory/file-must-exist.txt>
+  * Pass value of type: string
+    Value is resolved to a file path.
+    File path must exist.
+    File content is read as Buffer.
+
+"-ft" </path/to/directory/file-must-exist.txt>
+"--file-text" </path/to/directory/file-must-exist.txt>
   * Pass value of type: string
     Value is resolved to a file path.
     File path must exist.
     File content is read as string.
 
-"-ft" </path/to/directory/file-must-exist.txt>
-"--file-text" </path/to/directory/file-must-exist.txt>
+"-f" </path/to/directory/file-must-exist.txt>
+"--file" </path/to/directory/file-must-exist.txt>
   * Pass value of type: string
     Value is resolved to a file path.
     File path must exist.
@@ -168,8 +182,27 @@ options:
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-mf" </path/to/directory/file-must-exist.txt>
-"--file-many" </path/to/directory/file-must-exist.txt>
+
+"-mfs" </path/to/directory/file-must-exist.txt>
+"--file-stream-many" </path/to/directory/file-must-exist.txt>
+  * Pass value of type: string
+    Value is resolved to a file path.
+    File path must exist.
+    File content is readable as stream.
+  * Flag can be invoked more than once to pass multiple values.
+    Result is an ordered array of all values.
+
+"-mfb" </path/to/directory/file-must-exist.txt>
+"--file-buffer-many" </path/to/directory/file-must-exist.txt>
+  * Pass value of type: string
+    Value is resolved to a file path.
+    File path must exist.
+    File content is read as Buffer.
+  * Flag can be invoked more than once to pass multiple values.
+    Result is an ordered array of all values.
+
+"-mft" </path/to/directory/file-must-exist.txt>
+"--file-text-many" </path/to/directory/file-must-exist.txt>
   * Pass value of type: string
     Value is resolved to a file path.
     File path must exist.
@@ -177,8 +210,8 @@ options:
   * Flag can be invoked more than once to pass multiple values.
     Result is an ordered array of all values.
 
-"-mft" </path/to/directory/file-must-exist.txt>
-"--file-text-many" </path/to/directory/file-must-exist.txt>
+"-mf" </path/to/directory/file-must-exist.txt>
+"--file-many" </path/to/directory/file-must-exist.txt>
   * Pass value of type: string
     Value is resolved to a file path.
     File path must exist.

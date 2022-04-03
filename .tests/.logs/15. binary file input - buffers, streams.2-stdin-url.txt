@@ -1,0 +1,50 @@
+[stream event] readable: 1  / 10
+[stream event] readable: 2  / 10
+[stream event] readable: 3  / 10
+[stream event] readable: 4  / 10
+[stream event] readable: 5  / 10
+[stream event] readable: 6  / 10
+[stream event] readable: 7  / 10
+[stream event] readable: 8  / 10
+[stream event] readable: 9  / 10
+[stream event] readable: 10  / 10
+{
+  "--file-stream": {
+    "type": "stream.Readable",
+    "bytes": 452
+  },
+  "--bool-many": [],
+  "--string-many": [],
+  "--num-many": [],
+  "--int-many": [],
+  "--enum-many": [],
+  "--regex-many": [],
+  "--regex-case-insensitive-many": [],
+  "--file-path-many": [],
+  "--file-path-dirname-exists-many": [],
+  "--file-path-exists-many": [],
+  "--file-stream-many": [
+    {
+      "type": "stream.Readable",
+      "bytes": 452
+    },
+    {
+      "type": "stream.Readable",
+      "bytes": 468
+    },
+    {
+      "type": "stream.Readable",
+      "bytes": 7
+    },
+    {
+      "type": "stream.Readable",
+      "bytes": 7199
+    }
+  ],
+  "--file-buffer-many": [],
+  "--file-text-many": [],
+  "--file-many": [],
+  "--file-lines-many": [],
+  "--file-json-many": [],
+  "--file-module-many": []
+}

@@ -1,3 +1,13 @@
+[stream event] readable: 1  / 10
+[stream event] readable: 2  / 10
+[stream event] readable: 3  / 10
+[stream event] readable: 4  / 10
+[stream event] readable: 5  / 10
+[stream event] readable: 6  / 10
+[stream event] readable: 7  / 10
+[stream event] readable: 8  / 10
+[stream event] readable: 9  / 10
+[stream event] readable: 10  / 10
 {
   "--file-stream": {
     "type": "stream.Readable",

@@ -1,13 +1,9 @@
+[stdin stream] drained
 {
-  "--file-stream": {
-    "type": "stream.Readable",
-    "bytes": 0
-  },
   "--file-buffer": {
     "type": "Buffer",
     "data": [
       123,
-      13,
       10,
       32,
       32,
@@ -52,7 +48,6 @@
       118,
       34,
       44,
-      13,
       10,
       32,
       32,
@@ -75,7 +70,6 @@
       48,
       34,
       44,
-      13,
       10,
       32,
       32,
@@ -102,7 +96,6 @@
       115,
       34,
       44,
-      13,
       10,
       32,
       32,
@@ -199,7 +192,6 @@
       46,
       34,
       44,
-      13,
       10,
       32,
       32,
@@ -224,7 +216,6 @@
       48,
       34,
       44,
-      13,
       10,
       32,
       32,
@@ -239,7 +230,6 @@
       58,
       32,
       123,
-      13,
       10,
       32,
       32,
@@ -270,7 +260,6 @@
       107,
       34,
       44,
-      13,
       10,
       32,
       32,
@@ -311,7 +300,6 @@
       109,
       34,
       44,
-      13,
       10,
       32,
       32,
@@ -356,13 +344,11 @@
       110,
       107,
       34,
-      13,
       10,
       32,
       32,
       125,
       44,
-      13,
       10,
       32,
       32,
@@ -381,7 +367,6 @@
       58,
       32,
       123,
-      13,
       10,
       32,
       32,
@@ -401,7 +386,6 @@
       116,
       34,
       44,
-      13,
       10,
       32,
       32,
@@ -464,20 +448,17 @@
       103,
       118,
       34,
-      13,
       10,
       32,
       32,
       125,
-      13,
       10,
       125,
-      13,
       10
     ]
   },
-  "--file-text": "{\r\n  \"name\": \"@warren-bank/node-process-argv\",\r\n  \"version\": \"1.2.0\",\r\n  \"main\": \"lib/index.js\",\r\n  \"description\": \"An extremely lightweight node.js library to process command-line arguments.\",\r\n  \"license\": \"GPL-2.0\",\r\n  \"author\": {\r\n    \"name\": \"Warren R. Bank\",\r\n    \"email\": \"warren.r.bank@gmail.com\",\r\n    \"url\": \"https://github.com/warren-bank\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"https://github.com/warren-bank/node-process-argv\"\r\n  }\r\n}\r\n",
-  "--file": "{\r\n  \"name\": \"@warren-bank/node-process-argv\",\r\n  \"version\": \"1.2.0\",\r\n  \"main\": \"lib/index.js\",\r\n  \"description\": \"An extremely lightweight node.js library to process command-line arguments.\",\r\n  \"license\": \"GPL-2.0\",\r\n  \"author\": {\r\n    \"name\": \"Warren R. Bank\",\r\n    \"email\": \"warren.r.bank@gmail.com\",\r\n    \"url\": \"https://github.com/warren-bank\"\r\n  },\r\n  \"repository\": {\r\n    \"type\": \"git\",\r\n    \"url\": \"https://github.com/warren-bank/node-process-argv\"\r\n  }\r\n}\r\n",
+  "--file-text": "{\n  \"name\": \"@warren-bank/node-process-argv\",\n  \"version\": \"1.2.0\",\n  \"main\": \"lib/index.js\",\n  \"description\": \"An extremely lightweight node.js library to process command-line arguments.\",\n  \"license\": \"GPL-2.0\",\n  \"author\": {\n    \"name\": \"Warren R. Bank\",\n    \"email\": \"warren.r.bank@gmail.com\",\n    \"url\": \"https://github.com/warren-bank\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/warren-bank/node-process-argv\"\n  }\n}\n",
+  "--file": "{\n  \"name\": \"@warren-bank/node-process-argv\",\n  \"version\": \"1.2.0\",\n  \"main\": \"lib/index.js\",\n  \"description\": \"An extremely lightweight node.js library to process command-line arguments.\",\n  \"license\": \"GPL-2.0\",\n  \"author\": {\n    \"name\": \"Warren R. Bank\",\n    \"email\": \"warren.r.bank@gmail.com\",\n    \"url\": \"https://github.com/warren-bank\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/warren-bank/node-process-argv\"\n  }\n}\n",
   "--file-lines": [
     "{",
     "  \"name\": \"@warren-bank/node-process-argv\",",
@@ -522,24 +503,7 @@
   "--file-path-many": [],
   "--file-path-dirname-exists-many": [],
   "--file-path-exists-many": [],
-  "--file-stream-many": [
-    {
-      "type": "stream.Readable",
-      "bytes": 0
-    },
-    {
-      "type": "stream.Readable",
-      "bytes": 468
-    },
-    {
-      "type": "stream.Readable",
-      "bytes": 7
-    },
-    {
-      "type": "stream.Readable",
-      "bytes": 7199
-    }
-  ],
+  "--file-stream-many": [],
   "--file-buffer-many": [],
   "--file-text-many": [],
   "--file-many": [],
