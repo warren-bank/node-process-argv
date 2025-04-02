@@ -1,6 +1,6 @@
 {
   "name": "@warren-bank/node-process-argv",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "main": "lib/index.js",
   "description": "An extremely lightweight node.js library to process command-line arguments.",
   "license": "GPL-2.0",
